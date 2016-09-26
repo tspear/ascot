@@ -1,2 +1,2 @@
-# ascot
+# ASCOT
 The ASCOT system.
