@@ -1,6 +1,7 @@
 // setup
 var TwitterBot = require("node-twitterbot").TwitterBot;
 var Bot = new TwitterBot("config.json");
+console.log(process.argv[2]);
 
 // actions
 Bot.addAction("tweet", function(twitter, action, tweet) {
