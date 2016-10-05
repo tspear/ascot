@@ -1,7 +1,6 @@
 // setup
 var TwitterBot = require("node-twitterbot").TwitterBot;
 var Bot = new TwitterBot("config.json");
-console.log(process.argv[2]);
 
 // actions
 Bot.addAction("tweet", function(twitter, action, tweet) {
@@ -10,13 +9,21 @@ Bot.addAction("tweet", function(twitter, action, tweet) {
 
 Bot.addAction("whitenoise", function(twitter, action, tweet) {
   var tweettxt="";
-  while(tweettxt.length<128){
+  
+  if (process.argv[2]) {
+   var hashtagtxt = process.argv[2];
+  }  
+
+  while(tweettxt.length < (138 - hashtagtxt.length)) {
     var newchar = "./".charAt(Math.floor(Math.random()*2));
     tweettxt = tweettxt.concat(newchar);
   }
-  tweettxt = tweettxt.concat(" #whitenoise");
+
+  tweettxt = tweettxt.concat(" #"+hashtagtxt);
+  
   console.log("tweeting: " + tweettxt);
   console.log("len: " + tweettxt.length);
+  
   Bot.tweet(tweettxt);
 });
 
