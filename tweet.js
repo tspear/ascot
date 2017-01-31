@@ -30,7 +30,7 @@ Bot.addAction("whitenoise", function(twitter, action, tweet) {
 
 Bot.addAction("emojitweet", function(twitter, action, tweet) {
   console.log("Tweeting with Emoji");
-  var emoji = "🅿️🅿️📶🈁🆖🆗0️⃣1️⃣2️⃣3️⃣4️⃣▶️⏸⏯⏹⏺⏭⏮⏩⏪🔀🔁◀️🔼🔽⏫⏬⬅️⬆️⬇️↗️↙️↖️↕️↔️🔄↪️↩️⤴️⤵️#️⃣*️⃣ℹ️🔤";
+  var emoji = "🅿️🅿️📶🈁🆖▶️⏸⏯⏹⏺⏭⏮⏩⏪🔀🔁◀️🔼🔽⏫⏬⬅️⬆️⬇️↗️↙️↖️🔄↪️↩️⤴️ℹ️🔤";
   var tweettxt ="";
   if (process.argv[2]) {
    var hashtagtxt = process.argv[2];
