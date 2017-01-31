@@ -30,7 +30,7 @@ Bot.addAction("whitenoise", function(twitter, action, tweet) {
 
 Bot.addAction("emojitweet", function(twitter, action, tweet) {
   console.log("emojitweet);  
-  Bot.tweet("⏹⏹");
+  Bot.tweet(" ⏹⏹ #systemexperiment");
 });
 
 
