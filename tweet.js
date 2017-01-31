@@ -27,5 +27,12 @@ Bot.addAction("whitenoise", function(twitter, action, tweet) {
   Bot.tweet(tweettxt);
 });
 
+
+Bot.addAction("emojitweet", function(twitter, action, tweet) {
+  console.log("emojitweet);  
+  Bot.tweet("⏹⏹");
+});
+
+
 // schedule actions
-Bot.now("whitenoise");
+Bot.now("emojitweet");
