@@ -33,7 +33,7 @@ Bot.addAction("emojitweet", function(twitter, action, tweet) {
   console.log("Tweeting with Emoji");
 
   // emoji list.
-  var emoji = "❌🚫⭕️";
+  var emoji = "💾🖲⌨️🖥";
 
   // init the tweet
   var tweettxt ="";
