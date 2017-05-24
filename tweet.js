@@ -1,6 +1,6 @@
 // setup
 var TwitterBot = require("node-twitterbot").TwitterBot;
-var Bot = new TwitterBot("/home/tspear/ascot/config.json");
+var Bot = new TwitterBot("config.json");
 
 // actions
 Bot.addAction("tweet", function(twitter, action, tweet) {
@@ -33,7 +33,7 @@ Bot.addAction("emojitweet", function(twitter, action, tweet) {
   console.log("Tweeting with Emoji");
 
   // emoji list.
-  var emoji = "🎚🎛";
+  var emoji = "0️⃣1️⃣2️⃣3️⃣️⃣8️⃣";
 
   // init the tweet
   var tweettxt ="";
